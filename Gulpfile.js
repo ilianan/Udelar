@@ -1,7 +1,6 @@
 var gulp        = require('gulp'),
     gutil       = require('gulp-util'),
     sass        = require('gulp-sass'),
-    csso        = require('gulp-csso'),
     concat      = require('gulp-concat'),
     livereload  = require('gulp-livereload'), 
     tinylr      = require('tiny-lr'),
@@ -15,7 +14,7 @@ var TEMPLATES_PATH = 'www/**/*.html';
 
 // SASS settings. 
 var SCSS_PATH = 'www/scss/**/*.scss';
-var CSS_PATH = 'www/css';
+var CSS_PATH = 'www/css/';
 
 // Web server settings.
 PORT = 8000;
@@ -23,13 +22,15 @@ PORT = 8000;
 gulp.task('css', function() {
   return gulp.src(SCSS_PATH)
     .pipe( 
-      sass( { 
+      sass({ 
         includePaths: [SCSS_PATH],
         errLogToConsole: true
-      } ) )
-    .pipe( csso() )
-    .pipe( gulp.dest(CSS_PATH) )
-    .pipe( livereload( server ));
+      })
+    )
+    .pipe(gulp.dest(CSS_PATH))
+    .pipe(concat('main.css'))
+    .pipe(gulp.dest(CSS_PATH))
+    .pipe(livereload(server));
 });
 
 gulp.task('livereload', function () {

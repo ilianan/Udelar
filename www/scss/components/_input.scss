@@ -1,0 +1,16 @@
+input, textarea	 {
+	border: 1px solid $light-gray;
+	padding: 0.7rem 1rem;
+	margin: $small-margin;
+	font-weight: 200;
+	font-size: 1.2rem;
+	color: $dark-gray;
+	outline: none;
+	vertical-align: top;
+}
+
+textarea {
+	resize: none;
+	width: 20rem;
+	height: 6rem;
+}

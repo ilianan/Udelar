@@ -1,0 +1,39 @@
+button {
+	// Sizing.
+	padding: 0.8rem 1.1rem;
+
+	// Borders.
+	border: none;
+	font-size: 0.9rem;
+	font-weight: 200;
+
+	// Typography.
+	color: $white;
+	text-transform: uppercase;
+
+	// Colors.
+	background-color: $primary-color;
+	border-color: $primary-color;
+	color: $white;
+
+	// Sizes.
+	&.small {
+		font-size: 0.8rem;
+		font-weight: 400;
+		padding: 0.55rem 0.8rem;
+	}
+
+	&.large {
+		padding: 1rem 1.5rem;
+		font-size: 1.2rem;
+	}
+
+	// Type.
+	&.ghost {
+		font-weight: 400;
+		background-color: transparent;
+		border-width: 1px;
+		border-style: solid;
+		color: $primary-color;
+	}
+}

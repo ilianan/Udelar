@@ -1,0 +1,81 @@
+$primary-font: 'Lato';
+$base-font-size: 14px;
+
+@font-face {
+	font-family: 'Lato';
+	src: url(Lato.ttf) format('ttf');
+}
+
+*, html {
+	font-size: $base-font-size;
+	font-family: $primary-font;
+	color: $black;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 2.5rem;
+	line-height: 3rem;
+
+	&.large {
+		font-size: 5.2rem;
+		line-height: 6rem;
+
+		font-weight: 200;
+		text-transform: uppercase;
+	}
+}
+
+h2 {
+	font-size: 2rem;
+	line-height: 3rem;
+
+	&.subtitle {
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+		text-transform: uppercase;
+		color: #7d7d7d;
+		font-weight: 200;
+	}
+}
+
+h3 {
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+
+	&.subtitle {
+		font-size: 1.1rem;
+		line-height: 1.5rem;
+		text-transform: uppercase;
+	}
+}
+
+h4 {
+	font-size: 1.1rem;
+	font-weight: 600;
+	line-height: 1.5rem;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: #7d7d7d;
+}
+
+p {
+	font-weight: 200;
+	font-size: 1.25rem;
+	line-height: 1.6rem;
+
+	&.small {
+		font-size: 1rem;
+		line-height: 1.4rem;	
+	}
+
+	&.lead {
+		font-size: 1.5rem;
+		font-weight: 200;
+		line-height: 2rem;
+	}
+}

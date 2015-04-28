@@ -1,0 +1,23 @@
+#scholarship {
+	padding: 0 $large-padding $big-padding $large-padding;
+	
+	.col-50{
+		width: 49%;
+		display: inline-block;
+		box-sizing: border-box;
+		padding-right: $big-padding;
+	}
+
+	.row {
+		margin-top: $medium-margin;
+	}
+
+	h5 {
+		font-weight: 300;
+	}
+
+	p {
+		margin-top: $small-margin;
+	}
+
+}

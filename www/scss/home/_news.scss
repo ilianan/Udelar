@@ -1,0 +1,24 @@
+#news {
+	padding: $big-padding $large-padding; 
+
+	article {
+		background-repeat: no-repeat;
+		background-size: cover;
+		box-sizing: border-box;
+		padding: $medium-padding;
+		padding-top: 10rem;
+		margin-top: 2rem;
+
+		&.col-33 {
+			position: relative;
+			width: 30%;
+			margin-right: 3%;
+			display: inline-block;
+		}
+
+ 	}
+
+	h4, p {
+		color: $white;
+	}
+}

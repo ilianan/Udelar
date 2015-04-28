@@ -1,0 +1,30 @@
+header {
+	box-sizing: border-box;
+	padding: $medium-padding $large-padding;
+	background: $primary-color;
+	width: 100%;
+
+	h2.subtitle {
+		display: inline;
+		color: $white;
+	}
+
+	nav {
+		float: right;
+
+		li {
+			display: inline-block;
+			padding: 0.7em;
+			
+			a {
+				color: $white;
+				text-transform: uppercase;
+				font-weight: 200;
+
+				&:hover {
+					border-bottom: 1px solid $white;
+				}
+			} 
+		}
+	}
+}

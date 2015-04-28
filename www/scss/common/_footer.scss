@@ -1,0 +1,42 @@
+footer {
+	background-color:$primary-color;
+	padding: $big-padding $medium-padding;
+	text-align: center;
+
+	.col-50 {
+		width: 50%;
+		display: inline-block;
+	}
+
+	.col-20 {
+		width: 19%;
+		box-sizing: border-box;
+		display: inline-block;
+	}
+
+	.row {
+		width: 100%;
+	}
+	
+	.social {
+		i {
+			background: transparent;
+			border-radius: 100%;
+			height: 4rem;
+			width: 4rem;
+			text-align: center;
+			border: 2px solid white;
+			color: white;
+
+			&:before {
+				line-height: 4rem;
+			}
+		}
+	}
+
+	p {
+		color: $white;
+		text-align: center;
+		margin-top: $small-padding;
+	}
+}

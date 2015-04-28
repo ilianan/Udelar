@@ -1,3 +1,14 @@
-h1 {
-	color: blue;
-}
+@import 'reset';
+
+// UI components.
+@import 'components/variables',
+		'components/colors',
+		'components/typography',
+		'components/buttons',
+		'components/input',
+		'common/header',
+		'common/footer',
+		'home/hero',
+		'home/news',
+		'home/scholarship',
+		'contact/contact';
